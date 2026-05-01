@@ -1,5 +1,9 @@
 [
     {
+        "title": "Music1",
+        "file": "music1.mxl"
+    },
+    {
         "title": "Song1",
         "file": "song1.musicxml"
     },

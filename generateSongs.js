@@ -11,12 +11,19 @@ const outputFile = path.join(__dirname, "songs.json");
 function generateSongs(files) {
 
     return files
-        .filter(file => file.endsWith(".musicxml"))
+
+        /* Support BOTH .musicxml and .mxl */
+        .filter(file =>
+            file.endsWith(".musicxml") ||
+            file.endsWith(".mxl")
+        )
+
         .map(file => {
 
             /* Generate readable title */
             const title = file
                 .replace(".musicxml", "")
+                .replace(".mxl", "")
                 .replace(/_/g, " ")
                 .replace(/\b\w/g, char => char.toUpperCase());
 
@@ -83,3 +90,4 @@ fs.readdir(musicFolder, (err, files) => {
         writeSongsFile(songs);
     });
 });
+
