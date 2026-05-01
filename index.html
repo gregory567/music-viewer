@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Music Viewer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- OpenSheetMusicDisplay -->
+    <script src="https://cdn.jsdelivr.net/npm/opensheetmusicdisplay@1.8.9/build/opensheetmusicdisplay.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Choir Music</h1>
+
+        <div class="controls">
+            <button onclick="zoomIn()">+</button>
+            <button onclick="zoomOut()">-</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="score"></div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
