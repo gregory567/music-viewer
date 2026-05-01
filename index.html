@@ -13,12 +13,31 @@
 <body>
 
     <header>
+
         <h1>Choir Music</h1>
 
-        <div class="controls">
-            <button onclick="zoomIn()">+</button>
-            <button onclick="zoomOut()">-</button>
+        <div class="top-controls">
+
+            <!-- SEARCH -->
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search songs..."
+                oninput="filterSongs()"
+            >
+
+            <!-- SONG SELECTOR -->
+            <select id="songSelector" onchange="changeSong()">
+            </select>
+
+            <!-- ZOOM -->
+            <div class="controls">
+                <button onclick="zoomIn()">+</button>
+                <button onclick="zoomOut()">−</button>
+            </div>
+
         </div>
+
     </header>
 
     <main>

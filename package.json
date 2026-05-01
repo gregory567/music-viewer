@@ -1,0 +1,21 @@
+{
+  "name": "music-viewer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "generateSongs.js",
+  "scripts": {
+    "generate-songs": "node generateSongs.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregory567/music-viewer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gregory567/music-viewer/issues"
+  },
+  "homepage": "https://github.com/gregory567/music-viewer#readme"
+}
